@@ -27,7 +27,7 @@ p{
   color: #8f8f8f;
 }
 .container-fluid{
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 /* Navigation Bar */
 
@@ -58,9 +58,16 @@ p{
 .title-image{
   width: 60%;
   transform: rotate(20deg);
+  position: absolute;
+  right: 30%;
+  z-index: 0;
 }
 #features{
   padding: 7% 15%;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+
 }
 .feature-box{
   text-align: center;
@@ -105,4 +112,36 @@ p{
 }
 .pricing-column{
   padding: 3% 2%;
+}
+
+@media (max-width: 991px) {
+  #title{
+    text-align: center;
+  }
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
+}
+/* FOOTER */
+
+#footer{
+  font-family: "Montserrat";
+  background-color: white;
+  text-align: center;
+  padding: 3.5% 15%;
+}
+#cta{
+  color:white;
+  background-color: #ff4c68;
+  padding: 7% 15%;
+  text-align: center;
+}
+.cta-font{
+  font-family: "Montserrat-black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+.font-data{
+  padding: 2rem 0.8rem;
 }
